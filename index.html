@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>How Far is Video Generation from World Model: A Physical Law Perspective</title>
-        <!-- <link rel="icon" type="image/x-icon" href="/static/img/icons/jellyfish.ico"> -->
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +16,6 @@
         <!-- Twitter -->
         <meta name="twitter:url" content="https://phyworld.github.io/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <!-- TODO: Modify it later -->
         <meta name="twitter:image" content="https://phyworld.github.io/static/img/preview.png" />
         <meta name="twitter:title" content="How Far is Video Generation from World Model: A Physical Law Perspective" />
         <meta name="twitter:description" content="We conduct a systematic study to investigate whether video generation is able to learn physical laws from videos, leveraging data and model scaling." />
@@ -109,9 +107,6 @@
                             <div><strong>Key Messages</strong>: 
                                 We first summrize the <strong><i>generalization observations</i></strong> of video models, 
                                 then analyze their underlying <strong><i>generalization mechanism</i></strong> and <strong><i>priority</i></strong>.
-                                <!-- We answer the question by summarizing <strong><i>generalization observation</i></strong>, 
-                                investigating <strong><i>generalization mechanism</i></strong> and 
-                                concluding <strong><i>generalization priority</i></strong> of the model. </div> -->
                             </div>
                         </div>
                     </div>
@@ -135,12 +130,12 @@
                             </span>
                             <span>Code</span>
                         </a>
-                        <a href="https://huggingface.co/" class="button" target="_blank">
+                        <!-- <a href="https://huggingface.co/" class="button" target="_blank">
                             <span class="icon is-small">
                                 <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face logo" style="height: 1em;">
                             </span>
                             <span>Models (Soon)</span>
-                        </a>
+                        </a> -->
                         <a href="https://huggingface.co/" class="button" target="_blank">
                             <span class="icon is-small">
                                 <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face logo" style="height: 1em;">
@@ -151,12 +146,10 @@
 
                 </div>
                 <div class="header-image">
-                    <!-- <img draggable="false" src="" alt="Teaser Image" class="teaser-image"> -->
                     <img draggable="false" src="static/image/horizontal_margin.jpeg" class="teaser-image">
-                    <!-- <img draggable="false" src="static/img/cambrian.png" class="teaser-image"> -->
 
                     <video  poster="" id="ade" autoplay controls muted loop width="100%" class="no-controls">
-                        <source src="static/video/teaser.mp4" type="video/mp4">
+                        <source src="static/video/teaser2x.mp4" type="video/mp4">
                     </video>
                     <img draggable="false" src="static/image/horizontal_margin.jpeg" class="teaser-image">
 
@@ -223,15 +216,6 @@
     
     <d-article>
 
-        <!-- <div class="text" style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden;">
-            <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
-                    src="https://www.youtube.com/embed/zna5PrtDUFE" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div> -->
-
         <div class="byline">
             <div class="byline-container">
                 <p>
@@ -272,7 +256,6 @@
                 Scaling video generation models is a promising path towards building general purpose simulators of the physical world.
                 </strong></i>
             </p>
-            <!-- <strong>How?</strong>  -->
             <p class="text abstract" style="margin-top: 0;">
                 However, the ability of video generation models to discover such laws purely from visual data without human priors can be questioned. 
                 A world model learning the true law should give predictions robust to nuances and correctly extrapolate on unseen scenarios.
@@ -329,35 +312,6 @@
             </ol>
         </p>
 
-        <!-- <div class="icon-row">
-            <a href="#visual-representation" class="icon-link">
-                <img src="static/img/icons/visual.svg" alt="Visual Representation Logo" class="icon">
-                Visual<br>Representations
-            </a>
-            <a href="#connector_design" class="icon-link">
-                <img src="static/img/icons/connector.svg" alt="Connector Logo" class="icon">
-                Connector<br>Design
-            </a>
-            <a href="#instruction_data" class="icon-link">
-                <img src="static/img/icons/data.svg" alt="Data Logo" class="icon">
-                Instruction<br>Data
-            </a>
-            <a href="#sec:inst_tuning" class="icon-link">
-                <img src="static/img/icons/recipe.svg" alt="Recipe Logo" class="icon">
-                Instruction<br>Recipes
-            </a>
-            <a href="#sec:benchmarking" class="icon-link">
-                <img src="static/img/icons/eval.svg" alt="Eval Logo" class="icon">
-                Evaluation<br>Protocol
-            </a>
-        </div>
-
-        <p class="click-hint" style="width: 85%;">
-            <img src="static/img/icons/click.gif" style="width: 1.5rem">
-            <strong>Click to jump to each section.</strong>
-        </p> -->
-
-
         <hr>
         <div id="law_discovery" class="section">
             <h1 class="text">Physical Law Discovery as Video Generation</h1>
@@ -390,8 +344,6 @@
             <h5 class="text">On the Verification of Learned Laws</h5>
 
             <p class="text">
-                <!-- <strong>Categorization of Generalization Patterns</strong> -->
-                <!-- <strong>On the Verification of Learned Laws</strong> -->
                 Suppose we have a video generation model learned based on the above formulation. How do we determine if the underlying physical law has been discovered? 
                 A well-established law describes the behavior of the natural world, <i>e.g.</i>, how objects move and interact. Therefore, a video model incorporating 
                 true physical laws should be able to withstand experimental verification, producing reasonable predictions under any circumstances, which demonstrates 
