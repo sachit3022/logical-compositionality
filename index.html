@@ -277,8 +277,8 @@
         <p class="text abstract", style="margin-top: 0%;">
             &#x1F449;<span style="color: blue;"><strong>Key Messages</strong></span> &nbsp;
             <ul class="text" style="margin-top: 0%; padding-left: 10%;">
-                <li style="margin-bottom: 0;"><strong><i>Generalization observation</i></strong> &nbsp; Perfect in-distribution generalization, failed to generalize in out-of-distribution scenarios, scaling behavior for combinatorial generalization. </li>
-                <li style="margin-bottom: 0;"><strong><i>Generalization mechanism</i></strong> &nbsp; The models fail to abstract general physical rules and instead exhibit "case-based" generalization behavior, <i>i.e.</i>, mimicking the closest training example. </li>
+                <li style="margin-bottom: 0;"><strong><i>Generalization observation</i></strong> &nbsp; Perfect in-distribution generalization, failed to generalize in out-of-distribution scenarios, scaling behaviour for combinatorial generalization. </li>
+                <li style="margin-bottom: 0;"><strong><i>Generalization mechanism</i></strong> &nbsp; The models fail to abstract general physical rules and instead exhibit "case-based" generalization behaviour, <i>i.e.</i>, mimicking the closest training example. </li>
                 <li style="margin-bottom: 0;"><strong><i>Generalization priority</i></strong> &nbsp; When generalizing to new cases, models are observed to prioritize different factors when referencing training data: color > size > velocity > shape. </li>
                 <!-- <li><strong><i>Data</i></strong> &nbsp; We develop a 2D simulator with simple geometric shapes (eliminating textures), for unlimited supply of data.</li> -->
                 <!-- <li><strong><i>Model</i></strong> &nbsp; We use standard video generation model without any specific designs and focus on scaling-up. </li> -->
@@ -288,8 +288,8 @@
             We developed a 2D simulation testbed for object movement and collisions to generate videos deterministically governed by one or more classical mechanics laws.
             This provides an unlimited supply of data for large-scale experimentation and enables quantitative evaluation of whether the generated videos adhere to physical laws.
             We trained diffusion-based video generation models to predict object movements based on initial frames.
-            Our scaling experiments show perfect generalization within the distribution, measurable scaling behavior for combinatorial generalization, but failure in out-of-distribution scenarios.
-            Further experiments reveal two key insights about the generalization mechanisms of these models: (1) the models fail to abstract general physical rules and instead exhibit ``case-based'' generalization behavior, \textit{i.e.}, mimicking the closest training example; (2) when generalizing to new cases, models are observed to prioritize different factors when referencing training data: color $>$ size $>$ velocity $>$ shape.
+            Our scaling experiments show perfect generalization within the distribution, measurable scaling behaviour for combinatorial generalization, but failure in out-of-distribution scenarios.
+            Further experiments reveal two key insights about the generalization mechanisms of these models: (1) the models fail to abstract general physical rules and instead exhibit ``case-based'' generalization behaviour, \textit{i.e.}, mimicking the closest training example; (2) when generalizing to new cases, models are observed to prioritize different factors when referencing training data: color $>$ size $>$ velocity $>$ shape.
             Our study suggests that scaling alone is insufficient for video generation models to uncover fundamental physical laws, despite its role in Sora's broader success. -->
         </p>
 
@@ -300,7 +300,7 @@
                 <li><strong><a href="#law_discovery">&sect;Physical Law Discovery as Video Generation</a></strong>: Problem definition and categoraization of evaluation</li>
                 <li><strong><a href="#id_and_ood">&sect;In-Distribution and Out-of-Distribution Generalization</a></strong>: We study how in-distribution and out-of-distribution generalization is correlated with model or data scaling.</li>
                 <li><strong><a href="#combo_gen">&sect;Combinatorial Generalization</a></strong>: We investigate the combinatorial generalization abilities of video generation models.</li>
-                <li><strong><a href="#analysis">&sect;Analysis on Generalization behavior</a></strong>: We investigate the generalization mechanism of a video generation model.</li>
+                <li><strong><a href="#analysis">&sect;Analysis on Generalization behaviour</a></strong>: We investigate the generalization mechanism of a video generation model.</li>
                 <ul>
                     <li><a href="#inter_and_extra">&sect;Understanding Generalization from Interpolation and Extrapolation.</a></li>
                     <li><a href="#memo_vs_gen">&sect;Memorization or Generalization.</a></li>
@@ -345,7 +345,7 @@
 
             <p class="text">
                 Suppose we have a video generation model learned based on the above formulation. How do we determine if the underlying physical law has been discovered? 
-                A well-established law describes the behavior of the natural world, <i>e.g.</i>, how objects move and interact. Therefore, a video model incorporating 
+                A well-established law describes the behaviour of the natural world, <i>e.g.</i>, how objects move and interact. Therefore, a video model incorporating 
                 true physical laws should be able to withstand experimental verification, producing reasonable predictions under any circumstances, which demonstrates 
                 the model's generalization ability. To comprehensively evaluate this, we consider the following categorization of generalization 
                 (see <a href="#fig-cat_of_gen">Figure 1</a>) within the scope of this paper:
@@ -516,7 +516,7 @@
                 <br><br>
                 <strong>Model</strong> Given the complexity of the task, we adopt the 256$\times$256 resolution and train the model for more iterations (1 million steps).
                     Consequently, we are unable to conduct a comprehensive sweep of all data and model size combinations as before. Therefore, we mainly focus on the largest model,
-                    DiT-XL, to study data scaling behavior for combinatorial generalization.
+                    DiT-XL, to study data scaling behaviour for combinatorial generalization.
             </p>
 
             <h5 class="text">Results of Scaling the Data and Model</h5>
@@ -549,10 +549,10 @@
                                 <tr>
                                     <td>DiT-XL</td>
                                     <td>30</td>
-                                    <td>17.9 / 19.8</td>
-                                    <td>0.972 / 0.948</td>
-                                    <td>32.5 / 26.5</td>
-                                    <td>0.030 / 0.069</td>
+                                    <td>19.5 / 19.7</td>
+                                    <td>0.973 / 0.950</td>
+                                    <td>32.7 / 27.1</td>
+                                    <td>0.028 / 0.065</td>
                                     <td>3% / 18%</td>
                                 </tr>
                                 <tr>
@@ -603,7 +603,7 @@
         <hr>
 
         <div id="analysis" class="section">
-            <h1 class="text">Analysis on The Generalization Behavior</h1>
+            <h1 class="text">Analysis on The Generalization Behaviour</h1>
 
         </div>
         <div id="inter_and_extra" class="section">
@@ -672,7 +672,7 @@
 
             <p class="text">
                 Previous work<d-cite key="hu2024case"></d-cite> indicates that LLMs rely on memorization, reproducing training cases during inference instead of 
-                learning the underlying rules for tasks like addition arithmetic. We investigate whether video generation models display similar behavior, memorizing data rather than understanding physical laws.
+                learning the underlying rules for tasks like addition arithmetic. We investigate whether video generation models display similar behaviour, memorizing data rather than understanding physical laws.
 
                 <br><br>
                 <strong>Experimental Design</strong>&nbsp;
