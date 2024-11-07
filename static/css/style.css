@@ -195,6 +195,25 @@ body {
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
+.collapse-btn {
+  background-color: #FFF0CE;
+  color: #000; /* Black text */
+  border: 2px solid rgba(255, 193, 7, 0.5);
+  /* border-radius: 25px; Rounded borders */
+  border-radius: 20px; /* Rounded borders */
+  padding: 10px 20px; /* Top and bottom padding, left and right padding */
+  margin: 5px 2px; /* Space between the buttons */
+  text-decoration: none; /* Remove the underline from links */
+  display: inline-block; /* Display links as inline blocks */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.collapse-btn:hover {
+  background-color: #EAB682; /* Darker yellow background on hover */
+  color: #fff; /* White text on hover */
+}
+
 .button-container a.button:hover {
   background-color: #EAB682; /* Darker yellow background on hover */
   color: #fff; /* White text on hover */
