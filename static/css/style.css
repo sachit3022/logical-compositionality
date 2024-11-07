@@ -234,12 +234,12 @@ body {
   }
 
   .header-image img {
-    max-width: 83%; /* Image should be responsive within the container */
+    max-width: 87%; /* Image should be responsive within the container */
     height: auto; /* Maintain the aspect ratio */
   }
 
   .header-image video {
-    max-width: 83%; /* Image should be responsive within the container */
+    max-width: 87%; /* Image should be responsive within the container */
     height: auto; /* Maintain the aspect ratio */
   }
 }

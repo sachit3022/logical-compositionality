@@ -45,7 +45,9 @@
         <link rel="stylesheet" href="./static/css/style.css">
         <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
@@ -55,6 +57,7 @@
 
         <!-- medium zoom https://github.com/francoischalifour/medium-zoom -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>  <!-- jquery -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script defer src="./static/js/medium-zoom.min.js"></script>
         <script defer src="./static/js/zoom.js"></script>
 
@@ -72,6 +75,10 @@
             }
             .no-controls:hover::-moz-media-controls {
                 display: none !important;
+            }
+            #twitter_container {
+                column-width: 250px;
+                column-gap: 20px;
             }
         </style>
     </head>
@@ -95,7 +102,7 @@
                             <div><strong>Tasks</strong>: We consider physical events governed by one or more classical mechanics laws, e.g., <i>law of intertia</i>, <i>Newton's second law</i> and <i> the conservation of energy</i>.</div>
                         </div>
                         <div class="icon-item">
-                            <img src="./static/icon/data.svg" alt="Data Icon">
+                            <img src="./static/icon/data.svg" alt="Data">
                             <div><strong>Data</strong>: We develop a 2D simulator with simple geometric shapes (eliminating textures), ensuring unlimited supply of data for scaling.</div>
                         </div>
                         <div class="icon-item">
@@ -103,10 +110,16 @@
                             <div><strong>Model</strong>: We use standard video generation model and focus on scaling-up.</div>
                         </div>
                         <div class="icon-item">
-                            <img src="./static/icon/keys.svg" alt="keys Icon">
+                            <img src="./static/icon/keys.svg" alt="Messages">
                             <div><strong>Key Messages</strong>: 
-                                We first summrize the <strong><i>generalization observations</i></strong> of video models, 
+                                We first summarize the <strong><i>generalization observations</i></strong> of video models,
                                 then analyze their underlying <strong><i>generalization mechanism</i></strong> and <strong><i>priority</i></strong>.
+                            </div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./static/icon/discussion.svg" alt="Discussion">
+                            <div><strong>Community</strong>:
+                                <a href="#twitter"> Click to view the lively discussions within the community.</a>
                             </div>
                         </div>
                     </div>
@@ -308,9 +321,24 @@
                     <li><a href="#how_to_combine">&sect;How Does Complex Combinatorial Generalization Happen?</a></li>
                     <li><a href="#visual_ambiguity">&sect;Is Video Sufficient for Complete Physics Modeling?</a></li>
                 </ul>
-                <li><strong><a href="#open_discussion">&sect;Open Discussion</a></strong>: We aim to triger more discussion in understanding the ability and limitation of video generation models.</li>
+                <li><strong><a href="#open_discussion">&sect;Open Discussion</a></strong>: We aim to trigger more discussion in understanding the ability and limitation of video generation models.</li>
             </ol>
         </p>
+
+        <hr>
+        <div class="section" id="twitter">
+            <h1 class="text">Discussions from the Community <button class="btn btn-warning btn-sm" style="background-color: #FFF0CE; color: #000; border: 2px solid rgba(255, 193, 7, 0.5); border-radius: 5px; " data-toggle="collapse" data-target="#twitter_container"> <i class="fa-duotone fa-solid fa-comments"></i> Display / Hide </button></h1>
+            <div class="text collapse" id="twitter_container">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Curious whether video generation models (like <a href="https://twitter.com/hashtag/SORA?src=hash&amp;ref_src=twsrc%5Etfw">#SORA</a>) qualify as world models?<br><br>We conduct a systematic study to answer this question by investigating whether a video gen model is able to learn physical laws. <br><br>Three are three key messages to take home: <br>1⃣The model generalises… <a href="https://t.co/oWYT2AcRTy">pic.twitter.com/oWYT2AcRTy</a></p>&mdash; Bingyi Kang (@bingyikang) <a href="https://twitter.com/bingyikang/status/1853635009611219019?ref_src=twsrc%5Etfw">November 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Not a surprising result.<br>But good that someone tried this out. <a href="https://t.co/0KWsJeaOLy">https://t.co/0KWsJeaOLy</a></p>&mdash; Yann LeCun (@ylecun) <a href="https://twitter.com/ylecun/status/1854022022654767367?ref_src=twsrc%5Etfw">November 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow. First <a href="https://twitter.com/pmarca?ref_src=twsrc%5Etfw">@pmarca</a> confirms deep learning is hitting a wall, now this, EXACTLY what I have been telling you all since 1998, over and over again.<br><br>The difference between within and out of training space generalization is all.<br><br>Until we solve this, we won’t get to AGI. <a href="https://t.co/KvH14R8Veu">https://t.co/KvH14R8Veu</a></p>&mdash; Gary Marcus (@GaryMarcus) <a href="https://twitter.com/GaryMarcus/status/1854030327301501209?ref_src=twsrc%5Etfw">November 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is not surprising to me, but I’m glad they did the work to test it. Agents need more inductive bias - eg common sense core from Spelke - , and active data collection from diverse embodied environments to test their causal theories ie. beyond pixel prediction . <a href="https://t.co/ovZhzDQpay">https://t.co/ovZhzDQpay</a></p>&mdash; Kevin Patrick Murphy (@sirbayes) <a href="https://twitter.com/sirbayes/status/1854018182849438078?ref_src=twsrc%5Etfw">November 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Really happy to see this study! Always wanted to do something like this myself, if only to support calming words to grad students: current-gen generative models have nothing to do with intelligence, and AI research remains fascinating and unsolved! <a href="https://t.co/D4FI2Wi60P">https://t.co/D4FI2Wi60P</a></p>&mdash; Vincent Sitzmann (@vincesitzmann) <a href="https://twitter.com/vincesitzmann/status/1853735899051299194?ref_src=twsrc%5Etfw">November 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Interesting addition to the discussion over whether AI video models are world models.<br><br>But even if that topic doesn’t interest you, this “video abstract” is one of the best examples of summarizing a paper for social media I have seen. <a href="https://t.co/BWdXHk5s9Q">https://t.co/BWdXHk5s9Q</a></p>&mdash; Ethan Mollick (@emollick) <a href="https://twitter.com/emollick/status/1853857842312188012?ref_src=twsrc%5Etfw">November 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">While video models can generate stunning visuals, lots more work is needed to really make them effective world models.<br><br>Problems like object persistence, compositionality, action following and accurate physics are all current issues with current models. <a href="https://t.co/Iq0XRcnvIn">https://t.co/Iq0XRcnvIn</a></p>&mdash; Yilun Du (@du_yilun) <a href="https://twitter.com/du_yilun/status/1853792065198436709?ref_src=twsrc%5Etfw">November 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="zh" dir="ltr">大家都很好奇，Sora 等视频生成模型训练完全后，是否有会成为世界模型？<br>简单来说，答案是 NO！<br><br>这项研究尝试让视频模型学习物理定律，结果如何呢？<br>- 模型对于分布内数据可以完美地进行泛化，但无法对分布外数据进行泛化<br>- 模型无法抽象出一般规则，而是试图模仿最接近的训练示例。 <br>-… <a href="https://t.co/RkiCcmAb2k">https://t.co/RkiCcmAb2k</a></p>&mdash; orange.ai (@oran_ge) <a href="https://twitter.com/oran_ge/status/1853927295570100229?ref_src=twsrc%5Etfw">November 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
 
         <hr>
         <div id="law_discovery" class="section">
