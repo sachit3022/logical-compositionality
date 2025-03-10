@@ -10,4 +10,4 @@ then open the browser and go to `http://localhost:8000`
 
 ### Acknowledgement
 
-This webpage is built based on the code from [https://github.com/phyworld/phyworld.github.io](https://github.com/phyworld/phyworld.github.io)
+This webpage is built based on the code [https://github.com/phyworld/phyworld.github.io](https://github.com/phyworld/phyworld.github.io)
