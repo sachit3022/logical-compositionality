@@ -1,4 +1,4 @@
-# Phyworld Webpage
+# Logical Compositionality Webpage
 
 ### local development:
 run a local http server to preview the webpage
@@ -10,4 +10,4 @@ then open the browser and go to `http://localhost:8000`
 
 ### Acknowledgement
 
-This webpage is built based on the code from [https://github.com/cambrian-mllm/cambrian-mllm.github.io/](https://github.com/cambrian-mllm/cambrian-mllm.github.io/)
+This webpage is built based on the code from [https://github.com/phyworld/phyworld.github.io](https://github.com/phyworld/phyworld.github.io)
